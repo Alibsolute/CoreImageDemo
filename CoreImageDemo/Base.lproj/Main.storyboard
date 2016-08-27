@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreImageDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="93R-yb-3i6">
+                                <rect key="frame" x="140" y="140" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="Vdj-Rw-TdS"/>
+                                    <constraint firstAttribute="width" constant="320" id="a3E-gw-Ij5"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXp-nO-dAu">
+                                <rect key="frame" x="263" y="495" width="75" height="30"/>
+                                <state key="normal" title="模糊效果"/>
+                                <connections>
+                                    <action selector="optionalAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4aV-Mc-u7y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="93R-yb-3i6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1B6-8j-Uva"/>
+                            <constraint firstItem="UXp-nO-dAu" firstAttribute="top" secondItem="93R-yb-3i6" secondAttribute="bottom" constant="35" id="ke5-9y-YSS"/>
+                            <constraint firstItem="93R-yb-3i6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x8i-zb-s7S"/>
+                            <constraint firstItem="UXp-nO-dAu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zEr-Ym-OXC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="93R-yb-3i6" id="YQ5-Br-7v7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="342"/>
+        </scene>
+    </scenes>
+</document>
